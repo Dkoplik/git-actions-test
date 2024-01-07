@@ -18,7 +18,7 @@ jobs:
     - uses: Scony/godot-gdscript-toolkit@master
     
     - name: Formater
-      run: gdformat --check source/
+      run: gdformat --check .
       
     - name: Linter
-      run: gdlint source/
+      run: gdlint .
