@@ -129,6 +129,7 @@ func _check_walking():
 		_is_walking = false
 
 
+
 ## Приватный метод. Проверяет персонажа на падениe и испускает сигнал
 ## [signal started_falling].
 func _check_falling():
