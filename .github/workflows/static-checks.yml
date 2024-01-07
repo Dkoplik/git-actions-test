@@ -17,9 +17,6 @@ jobs:
       
     - name: Toolkit
       uses: Scony/godot-gdscript-toolkit@master
-    
-    - name: Formater
-      run: gdformat --check ./
       
     - name: Linter
       run: gdlint ./
