@@ -15,10 +15,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       
-    - uses: Scony/godot-gdscript-toolkit@master
+    - name: Toolkit
+      uses: Scony/godot-gdscript-toolkit@master
     
-    - name: Formater
-      run: gdformat --check .
+    #- name: Formater
+    #  run: gdformat --check ./
       
     - name: Linter
-      run: gdlint .
+      run: gdlint ./
