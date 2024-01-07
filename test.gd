@@ -83,6 +83,7 @@ func _stop() -> float:
 	return 0
 
 
+
 ## Создаёт гравитацию.
 ## Добавляет к текущей скорости [member CharacterBody2D.velocity.y] 
 ## вычисленный параметр из функции _fall_speed().
