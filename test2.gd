@@ -3,3 +3,6 @@ func _ready():
 
 func test_func():
   print("Test")
+
+func test_func2():
+  print("Test")
