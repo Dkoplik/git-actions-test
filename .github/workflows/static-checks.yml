@@ -1,4 +1,4 @@
-name: Static checks
+name: Static Checks
 
 on:
   pull_request:
@@ -16,7 +16,7 @@ on:
 
 jobs:
   linter-checks:
-    name: 'Linter checks'
+    name: 'Linter Checks'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
