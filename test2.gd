@@ -1,8 +1,10 @@
 func _ready():
-  print('Test2')
+	print("Test2")
+
 
 func test_func():
-  print("Test")
+	print("Test")
+
 
 func test_func2():
-  print("Test")
+	print("Test")
