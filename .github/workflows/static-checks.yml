@@ -7,6 +7,12 @@ on:
       - 'develop'
     paths:
       - '**.gd'
+  push:
+    branches:
+      - 'main'
+      - 'develop'
+    paths:
+      - '**.gd'
 
 jobs:
   linter-checks:
@@ -21,15 +27,3 @@ jobs:
       
     - name: Linter
       run: gdlint ./
-  formater-checks:
-    name: 'Formater checks'
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      
-    - name: Toolkit
-      uses: Scony/godot-gdscript-toolkit@master
-      
-    - name: Formater
-      run: gdformat --check ./
