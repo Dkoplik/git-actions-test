@@ -27,7 +27,16 @@ jobs:
       - name: Format
         run: gdformat ./
 
+      - name: Check changes
+        run: |
+          if git diff --exit-code; then
+            echo "::set-env name=is_changed::false"
+          else
+            echo "::set-env name=is_changed::true"
+          fi
+
       - name: Commit
+        if: ${{ env.is_changed == 'true' }}
         run: |
           git config --global user.name 'Коплик Дмитрий'
           git config --global user.email 'Dkoplik@users.noreply.github.com'
