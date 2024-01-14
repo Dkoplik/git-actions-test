@@ -22,7 +22,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Checkout PR
-        run: gh pr checkout ${{ github.event.pull_request.number }}
+        run: gh pr checkout "${{ github.event.pull_request.number }}"
 
       - name: Toolkit
         uses: Scony/godot-gdscript-toolkit@master
