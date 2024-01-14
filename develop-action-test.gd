@@ -1,3 +1,2 @@
 func _ready():
-
-  print("Test")
+	print("Test")

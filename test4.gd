@@ -1,2 +1,2 @@
 func _ready():
-  print('He;;lo')
+	print("He;;lo")
