@@ -21,8 +21,8 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - name: Change Git Branch
-        run: git checkout &{{github.head.ref}}
+      - name: Checkout PR
+        run: gh pr checkout ${{ github.event.pull_request.number }}
 
       - name: Toolkit
         uses: Scony/godot-gdscript-toolkit@master
