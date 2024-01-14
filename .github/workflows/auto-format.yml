@@ -21,6 +21,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
+      - name: Change Git Branch
+        run: git checkout &{GITHUB_HEAD_REF}
+
       - name: Toolkit
         uses: Scony/godot-gdscript-toolkit@master
 
